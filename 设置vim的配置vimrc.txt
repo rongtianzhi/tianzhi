@@ -1,32 +1,38 @@
-   set background=dark
-背景使用黑色
+文件名必须为 .....
+vim    ~/.vimrc    或者  vi   ~/.vimrc   
 
-   set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
+ 
+ 
+set background=dark
+背景使用黑色  看情况使用
+
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
 状态行显示的内容
 
-   set laststatus=2
+set laststatus=2
 命令行上一行显示状态行的内容
 
-   set cursorcolumn
+set cursorcolumn
 显示光标当前列背景色为灰色
 
-   set  cursorline
+set  cursorline
 显示光标当前行下划线
+hi cursorline  cterm=NONE(关闭下划线)    ctermbg=darkred (背景色为红色)
 
-   set number
+set number
 显示行号
 
-   set scrolloff=3 
+set scrolloff=3 
 光标移动到顶部和底部时保持3行距离
 
-   set t_Co=256
+set t_Co=256
 显示颜色
 
-   nnoremap <F2> :g/^\s*$/d<CR> 
-去空行
+nnoremap <F2> :g/^\s*$/d<CR> 
+按F2键  去空行
 
-   nnoremap <F3> :g/^#/d<CR>
-去#号开头的行
+nnoremap <F3> :g/^#/d<CR>
+按F3键  去#号开头的行
 
 
 
