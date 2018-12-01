@@ -1,0 +1,30 @@
+   set background=dark
+   set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
+   set cursorcolumn
+   set  cursorline
+   set number
+   set laststatus=2
+   set scrolloff=3 
+   set t_Co=256
+   nnoremap <F2> :g/^\s*$/d<CR> 
+   nnoremap <F3> :g/^#/d<CR>
+
+
+
+
+
+
+echo 'set background=dark
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
+set cursorcolumn
+set  cursorline
+set number
+set laststatus=2
+set scrolloff=3 
+set t_Co=256
+nnoremap <F2> :g/^\s*$/d<CR> 
+nnoremap <F3> :g/^#/d<CR>  '   >  ~/.vimrc
+
+
+
+
