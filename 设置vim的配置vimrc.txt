@@ -69,7 +69,7 @@ nnoremap <F2> :g/^\s*$/d<CR>
 nnoremap <F3> :g/^#/d<CR> 
 autocmd BufNewFile *.sh,*.txt exec ":call SetTitle()"
  func SetTitle()
-   if &filetype == 'sh'
+   if &filetype == "sh"
      call setline(1,"\#########################################################################")
      call append(line("."),   "\# 文件名: ".expand("%"))
      call append(line(".")+1, "\# 版本号: 1.0")
