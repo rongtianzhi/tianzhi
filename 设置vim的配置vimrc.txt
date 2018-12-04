@@ -6,11 +6,11 @@ vim    ~/.vimrc    或者  vi   ~/.vimrc
 set background=dark
 背景使用黑色  看情况使用
 
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
+set statusline=%F%m%r%h%w\ %{&ff}格式\ %Y编辑器\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
 状态行显示的内容
 
 set laststatus=2
-命令行上一行显示状态行的内容
+启用命令行上一行显示状态行的内容
 
 set cursorcolumn
 显示光标当前列背景色为灰色
@@ -34,11 +34,31 @@ nnoremap <F2> :g/^\s*$/d<CR>
 nnoremap <F3> :g/^#/d<CR>
 按F3键  去#号开头的行
 
+autocmd BufNewFile *.sh,*.txt exec ":call SetTitle()"
+ func SetTitle()
+   if &filetype =='sh'
+     call setline(1,"\#########################################################################")
+     call append(line("."),   "\# 文件名: ".expand("%"))
+     call append(line(".")+1, "\# 版本号: 1.0")
+     call append(line(".")+2, "\# 作者名: 容天智")
+     call append(line(".")+3, "\# 邮箱号: 1111111111@qq.com")
+     call append(line(".")+4, "\# 年月日: ".strftime("%c"))
+     call append(line(".")+5, "\#########################################################################")
+     call append(line(".")+6, "\#!/bin/bash")
+     call append(line(".")+7, "")
+   else
+     call setline(1,"\#########################################################################")
+     call append(line("."),   "\# 文件名: ".expand("%"))
+     call append(line(".")+1, "\# 年月日: ".strftime("%c"))
+     call append(line(".")+2, "\#########################################################################")
+     call append(line(".")+3, "")
+     endif
+ normal G                                                                                             
+ endfunc
 
 
 
-
-echo 'set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")} 
+echo 'set statusline=%F%m%r%h%w\ %{&ff}格式\ %Y编辑器\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
 set cursorcolumn
 set  cursorline
 set number
@@ -47,6 +67,27 @@ set scrolloff=3
 set t_Co=256
 nnoremap <F2> :g/^\s*$/d<CR> 
 nnoremap <F3> :g/^#/d<CR> 
+autocmd BufNewFile *.sh,*.txt exec ":call SetTitle()"
+ func SetTitle()
+   if &filetype == 'sh'
+     call setline(1,"\#########################################################################")
+     call append(line("."),   "\# 文件名: ".expand("%"))
+     call append(line(".")+1, "\# 版本号: 1.0")
+     call append(line(".")+2, "\# 作者名: 容天智")
+     call append(line(".")+3, "\# 邮箱号: 1111111111@qq.com")
+     call append(line(".")+4, "\# 年月日: ".strftime("%c"))
+     call append(line(".")+5, "\#########################################################################")
+     call append(line(".")+6, "\#!/bin/bash")
+     call append(line(".")+7, "")
+   else
+     call setline(1,"\#########################################################################")
+     call append(line("."),     "\# 文件名: ".expand("%"))
+     call append(line(".")+1, "\# 年月日: ".strftime("%c"))
+     call append(line(".")+2, "\#########################################################################")
+     call append(line(".")+3, "")
+     endif
+ normal G                                                                                             
+ endfunc
 "set background=dark
 '   >  ~/.vimrc
 
