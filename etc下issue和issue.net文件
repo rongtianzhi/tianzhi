@@ -1,4 +1,8 @@
-/etc/issue                                                      //确认原始文件
+主机登录显示
+/etc/issue                                                      
+远程登录显示
+/etc/issue.net                                                 
+
 \S	Red Hat Enterprise Linux Server release 6.5 (Santiago)      //版本信息
 \r	3.10.0-693.el7.x86_64                                       //版本号
 \m	x86_64                                                      //版本类型
