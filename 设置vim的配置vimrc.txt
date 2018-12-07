@@ -6,7 +6,7 @@ vim    ~/.vimrc    或者  vi   ~/.vimrc
 set background=dark
 背景使用黑色  看情况使用
 
-set statusline=%F%m%r%h%w\ %{&ff}格式\ %Y编辑器\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
+set statusline=%F%m%r%h%w\ %{&ff}格式\ 源是%Y编辑器编写\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
 状态行显示的内容
 
 set laststatus=2
@@ -58,7 +58,7 @@ autocmd BufNewFile *.sh,*.txt exec ":call SetTitle()"
 
 
 
-echo 'set statusline=%F%m%r%h%w\ %{&ff}格式\ %Y编辑器\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
+echo 'set statusline=%F%m%r%h%w\ %{&ff}格式\ 源是%Y编辑器编写\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
 set cursorcolumn
 set  cursorline
 set number
