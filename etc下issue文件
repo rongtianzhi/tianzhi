@@ -1,16 +1,18 @@
-/etc/issue                              //确认原始文件
-\S	Red Hat Enterprise Linux Server release 6.5 (Santiago)
-\r	3.10.0-693.el7.x86_64
-\m	x86_64
-\t	19:27:13
-\u	1
-\U	1
-\o	(none)
-\s	Linux
-\d	Fri Dec 7 2018
-\l	tty6
-\v	#1 SMP Thu Jul 6 19:56:57 EDT 2017 
-\b	38400
-\n	mysl11
-\U	1 user
-\O	unknown_domain
+/etc/issue                                                      //确认原始文件
+\S	Red Hat Enterprise Linux Server release 6.5 (Santiago)      //版本信息
+\r	3.10.0-693.el7.x86_64                                       //版本号
+\m	x86_64                                                      //版本类型
+\t	19:27:13                                                    //时间
+\u	1                                                           //数字 1
+\U	1                                                           //数字 1
+\o	(none)                                                      //
+\s	Linux                                                       //系统类型
+\d	Fri Dec 7 2018                                              //
+\l	tty6                                                        //
+\v	#1 SMP Thu Jul 6 19:56:57 EDT 2017                          //
+\b	38400                                                       //
+\n	mysl11                                                      //主机名
+\U	1 user                                                      //
+\O	unknown_domain                                              //
+
+其他无用
