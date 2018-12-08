@@ -89,7 +89,7 @@ set t_Co=256
 nnoremap <F4> :g/^\s*$/d<CR> 
 nnoremap <F5> :g/^#/d<CR> 
 map <F2>  :set number <CR>
-map <C-F3>  :set nonumber  <CR>
+map <F3>  :set nonumber <CR>
 map <F7>  :set cursorcolumn <CR>                                                                         
 map <F6>  :set cursorline <CR> 
 map <C-F7>  :set nocursorcolumn <CR>                                                                         
