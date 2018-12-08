@@ -29,10 +29,10 @@ map <C-F6>  :set nocursorline <CR>
 
 set number
 显示行号
-map <F2>  :set number <CR> 
+map <F2> :set number <CR> 
 按F2键 开启行号
-map <C-F3>  :set nonumber  <CR>
-按Ctrl+F3键 关闭行号
+map <F3> :set nonumber <CR>
+按F3键 关闭行号
 
 set scrolloff=3 
 光标移动到顶部和底部时保持3行距离
