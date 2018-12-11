@@ -19,9 +19,12 @@ map <F7>    :set cursorcolumn <CR>
 map <C-F7>  :set nocursorcolumn <CR>   
 按Ctrl+F7键 关闭显示光标当前列
 
-map <F8> :x   <CR>
+map <F8> :x   <CR>   
+保存退出
 map <F9> :q!  <CR>
-
+强制修改或没改都不保存退出
+map <C-F8>  :wq! <CR>
+强制修改或没改都保存退出
 
 set  cursorline
 显示光标当前行下划线
