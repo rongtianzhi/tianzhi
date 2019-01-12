@@ -86,7 +86,7 @@ autocmd BufNewFile *.sh,*.txt exec ":call SetTitle()"
 
 
 
-echo 'set statusline=%F%m%r%h%w\ %{&ff}格式\ 源是%Y编辑器编写\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
+echo 'set statusline=%F%m%r%h%w\ %{&ff}格式\ %Y类型\ 第%l行第%v列\ 进度%p%%\ %{strftime(\"\ %c\ -\ %H:%M\")}
 set cursorcolumn
 set  cursorline
 set number
