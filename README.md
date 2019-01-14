@@ -19,9 +19,9 @@ func SetTitle()
 
 if &filetype == "sh"
 
-call setline(1, "\#!/bin/bash")
+  call setline(1, "\#!/bin/bash")
 
-call append(line("."), "")
+  call append(line("."), "")
 
 endif
 
